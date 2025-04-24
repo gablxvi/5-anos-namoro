@@ -1,0 +1,34 @@
+Imagens necessárias para o site:
+
+1. hero-bg.jpg - Imagem de fundo para a tela inicial (pode ser um fundo romântico ou uma foto especial - tamanho recomendado: 1920x1080px)
+
+2. momento1.jpg - Foto para a galeria principal (tamanho recomendado: 500x350px)
+
+3. momento2.jpg - Foto para a galeria principal (tamanho recomendado: 500x350px)
+
+4. momento3.jpg - Foto para a galeria principal (tamanho recomendado: 500x350px)
+
+5. momento4.jpg - Foto para a galeria principal (tamanho recomendado: 500x350px)
+
+6. memoria1.jpg - Foto para a seção de momentos especiais (tamanho recomendado: 600x400px)
+
+7. memoria2.jpg - Foto para a seção de momentos especiais (tamanho recomendado: 600x400px)
+
+8. memoria3.jpg - Foto para a seção de momentos especiais (tamanho recomendado: 600x400px)
+
+9. memoria4.jpg - Foto para a seção de momentos especiais (tamanho recomendado: 600x400px)
+
+10. memoria5.jpg - Foto para a seção de momentos especiais (tamanho recomendado: 600x400px)
+
+11. memoria6.jpg - Foto para a seção de momentos especiais (tamanho recomendado: 600x400px)
+
+Dicas para as imagens:
+- Escolha fotos que tragam boas memórias
+- Prefira fotos com boa iluminação e qualidade
+- Use fotos que tenham significado especial para vocês
+- Você pode usar diferentes poses ou expressões para adicionar variedade
+
+Se tiver poucas fotos:
+- Use diferentes recortes da mesma foto
+- Aplique filtros diferentes para criar variações
+- Adicione efeitos ou bordas decorativas para personalizar 
