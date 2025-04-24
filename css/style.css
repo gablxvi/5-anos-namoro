@@ -862,4 +862,37 @@ img {
         grid-template-columns: 1fr 1fr;
         gap: 15px;
     }
+}
+
+/* Controle de Áudio */
+.audio-control {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+}
+
+.audio-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--cor-destaque);
+    color: white;
+    border: none;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.audio-btn:hover {
+    transform: scale(1.1);
+    background-color: var(--cor-secundaria);
+}
+
+.audio-btn.muted i {
+    color: #ccc;
 } 

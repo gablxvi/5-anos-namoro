@@ -289,4 +289,50 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     `;
     document.head.appendChild(style);
+    
+    // Controle de música de fundo
+    const audioToggle = document.getElementById('audio-toggle');
+    const backgroundMusic = document.getElementById('background-music');
+    let isPlaying = false;
+
+    // Função para iniciar a música com interação do usuário
+    function setupAudio() {
+        // Os navegadores modernos exigem interação do usuário para reproduzir áudio automaticamente
+        document.body.addEventListener('click', function initialPlay() {
+            if (!isPlaying) {
+                backgroundMusic.play().then(() => {
+                    isPlaying = true;
+                    audioToggle.classList.remove('muted');
+                    audioToggle.innerHTML = '<i class="fas fa-volume-up"></i>';
+                }).catch(error => {
+                    console.error('Erro ao reproduzir áudio:', error);
+                });
+                // Remove este listener após a primeira interação
+                document.body.removeEventListener('click', initialPlay);
+            }
+        }, { once: true });
+    }
+
+    // Configurar botão de controle
+    audioToggle.addEventListener('click', function(e) {
+        e.stopPropagation(); // Impede a propagação para o listener do body
+        
+        if (isPlaying) {
+            backgroundMusic.pause();
+            audioToggle.classList.add('muted');
+            audioToggle.innerHTML = '<i class="fas fa-volume-mute"></i>';
+            isPlaying = false;
+        } else {
+            backgroundMusic.play().then(() => {
+                audioToggle.classList.remove('muted');
+                audioToggle.innerHTML = '<i class="fas fa-volume-up"></i>';
+                isPlaying = true;
+            }).catch(error => {
+                console.error('Erro ao reproduzir áudio:', error);
+            });
+        }
+    });
+
+    // Inicializar setup de áudio
+    setupAudio();
 }); 
